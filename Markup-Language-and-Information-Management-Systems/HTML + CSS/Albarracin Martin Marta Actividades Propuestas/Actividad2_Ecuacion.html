@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 2: Ecuacion Segundo Grado</title>
+    <script type="text/javascript">
+        var a;
+        var b;
+        var c;
+        var ecuacionMas;
+        var ecuacionMenos;
+
+        a = prompt("Introduce el valor a.");
+        b = prompt("Introduce el valor b.");
+        c = prompt("Introduce el valor c.");
+
+        ecuacionMas = (-parseInt(b) + Math.sqrt((parseInt(b)*parseInt(b))-(4*parseInt(a)*parseInt(c))))/(2*parseInt(a));
+        ecuacionMenos = (-parseInt(b) - Math.sqrt((parseInt(b)*parseInt(b))-(4*parseInt(a)*parseInt(c))))/(2*parseInt(a));
+
+        document.write("<p>[+] Resultado 1: <b>" + ecuacionMas + "</b></p>");
+        document.write("<p>[+] Resultado 2: <b>" + ecuacionMenos + "</b></p>");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

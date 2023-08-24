@@ -1,0 +1,49 @@
+ul {
+    list-style-position: inside;
+    list-style-image: url("instagram.png");
+}
+
+/*
+li:first-child {
+    color:rgb(255, 127, 178);
+}
+
+li:last-child {
+    color:rgb(111, 253, 146);
+}
+
+li:nth-child(3) {
+    color:red;
+}
+
+li:nth-child(2) {
+    color:blue;
+}
+li:nth-child(4) {
+    color:rgb(111, 162, 255);
+}
+*/
+
+/*
+li:nth-child(even){
+    color:red;
+}
+li:nth-child(odd){
+    color:blue;
+}
+
+li:first-child {
+    color:green;
+}
+*/
+li:nth-child(n+2){
+    color: red;
+}
+
+li:nth-child(3n+1){
+    color: blue;
+}
+
+li:nth-child(even){
+    list-style-image: url("twitch.png");
+}

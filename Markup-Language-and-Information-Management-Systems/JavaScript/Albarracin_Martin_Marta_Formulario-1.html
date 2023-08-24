@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - Marta Albarracin Martin</title>
+
+    <style type="text/css">
+        body {
+            font-family: arial, helvetica;
+        }
+
+        form {
+            width: 600px;
+            margin: 20px auto 0 auto;
+        }
+
+        label {
+            float: left;
+            width: 200px;
+            font-weight: bold;
+        }
+
+        label[for="registro_condiciones"] {
+            float: none;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        textarea {
+            width: 360px;
+        }
+
+        input[type="checkbox"] {
+            margin-left: 200px;
+        }
+
+        input[type="submit"] {
+            margin: 20px 0 0 200px;
+            display: block;
+        }
+    </style>
+    <script type="text/javascript">
+        function validacion() {
+            // Creación de las variables que registran los datos introducidos.
+            var nombre = document.getElementById("registro_nombre").value;
+            var apellido = document.getElementById("registro_apellido").value;
+            var email = document.getElementById("registro_email").value;
+            var password = document.getElementById("registro_password").value;
+            var comentario = document.getElementById("registro_comentarios").value;
+            var condiciones = document.getElementById("registro_condiciones").checked;
+
+            /* [+] RESTRICCIONES [+] */
+            // El nombre, email y comentarios son campos obligatorios.
+            if (nombre == "") {
+                alert("El campo NOMBRE es obligatorio");
+                return false;
+            }
+            if (apellido == "") {
+                alert("El campo APELLIDO es obligatorio");
+                return false;
+            }
+            if (email == "") {
+                alert("El campo EMAIL es obligatorio");
+                return false;
+            }
+            if (comentario == "") {
+                alert("El campo COMENTARIO es obligatorio");
+                return false;
+            }
+
+            // El campo email debe contener el símbolo '@'.
+            if (!email.includes('@')) {
+                alert("El campo EMAIL debe contener una @");
+                return false;
+            }
+
+            // El texto introducido en el campo de comentarios no debe exceder los 50 caracteres.
+            if (comentario.length > 50) {
+                alert("El comentario no puede exceder los 50 caracteres");
+                return false;
+            }
+
+            /* La contraseña debe tener entre 8 y 16 caracteres, al menos un dígito, al menos una
+            minúscula y al menos una mayúscula. Se deben de utilizar expresiones regulares.
+            (Deberás investigar cómo se utilizan las expresiones regulares en Javascript). */
+            if (password.length < 8 || password.length > 16) {
+                alert("La contraseña debe tener entre 8 y 16 caracteres");
+                return false;
+            }
+            if (!/[0-9]/.test(password)) {
+                alert("La contraseña debe tener al menos un dígito");
+                return false;
+            }
+            if (!/[a-z]/.test(password)) {
+                alert("La contraseña debe tener al menos una minúscula");
+                return false;
+            }
+            if (!/[A-Z]/.test(password)) {
+                alert("La contraseña debe tener al menos una mayúscula");
+                return false;
+            }
+
+            // Se deben aceptar las condiciones.
+            if (!condiciones) {
+                alert("Debes aceptar las condiciones de uso para continuar");
+                return false;
+            }
+
+            // Si todos los campos son válidos el formulario se enviará (si no, devolverá 'false' y no enviará el formulario).
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <form action="" method="POST" id="registro" onsubmit="return validacion()">
+        <fieldset>
+            <legend>Registro</legend>
+            <label for="registro_nombre">
+                Nombre:
+            </label>
+            <input type="text" name="nombre" id="registro_nombre" />
+
+            <label for="registro_apellidos">
+                Apellido:
+            </label>
+            <input type="text" name="apellido" id="registro_apellido" />
+
+            <label for="registro_email">
+                Email:</label>
+            <input type="text" name="email" id="registro_email" />
+
+            <label for="registro_password">
+                Password:
+            </label>
+            <input type="password" name="password" id="registro_password" />
+
+            <label for="registro_comentarios">
+                Comentarios:
+            </label>
+            <textarea name="comentarios" id="registro_comentarios" rows="5">
+			</textarea>
+
+            <input type="checkbox" name="condiciones" id="registro_condiciones" value="1" />
+
+            <label for="registro_condiciones">
+                Acepto las condiciones del servicio.</label>
+
+
+            <input type="submit" value="Enviar" />
+        </fieldset>
+    </form>
+</body>
+
+</html>

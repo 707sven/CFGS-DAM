@@ -1,0 +1,9 @@
+clase persona
+
+- nombre de la clase: Persona
+- atributos (características): caminar, respirar, vivir
+- métodos (funciones o comportamientos): nombre, características generales
+
+ej. 
+Persona1:Juan,35,1.80,80kg
+Persona2:Ana,25,1.70,60kg

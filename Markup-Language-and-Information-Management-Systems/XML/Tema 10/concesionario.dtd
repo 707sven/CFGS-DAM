@@ -1,0 +1,10 @@
+<!ELEMENT concesionario (coche*)>
+<!ELEMENT coche (modelo, marca, caballos, color, puertas, especificaciones+)> <!-- Una o más especificaciones-->
+<!ATTLIST concesionario ciudad CDATA #IMPLIED> <!-- Opcional-->
+<!ATTLIST coche cocheID CDATA #REQUIRED> <!-- Obligatorio-->
+<!ELEMENT modelo (#PCDATA)>
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT caballos (#PCDATA)>
+<!ELEMENT color (#PCDATA)>
+<!ELEMENT puertas (#PCDATA)>
+<!ELEMENT especificaciones (#PCDATA)>

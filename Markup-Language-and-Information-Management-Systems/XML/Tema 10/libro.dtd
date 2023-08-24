@@ -1,0 +1,27 @@
+<!-- Para decir cuantos elementos puede tener un elemento se pone detrás de la palabra:
+    + -> 1 o más
+    * -> 0 o más
+    ? -> 0 o 1
+-->
+<!ELEMENT libros (libro*)>
+
+<!-- Los elementos tienen que estar todos en orden
+    Se declara los elementos que contiene el elemento libro
+    Se puede decir que un atributo tiene varias variables (que pueda elegir entre uno u otro), con (atributo1|atributo2)-->
+<!ELEMENT libro (titulo, (autor|autora)*, paginas, editorial, genero+)>
+
+<!-- Para referenciar a un tipo de atributo, en este caso un id
+    - Si el atributo es necesario: #REQUIRED
+    - Si el atributo es opcional: #IMPLIED
+El atributo por defecto tiene ese valor -> "valor"
+-->
+<!ATTLIST libro libroID CDATA #REQUIRED>
+<!ATTLIST libro ISBN CDATA "1000">
+
+<!-- Se usa el #PCDATA para referenciar a que el elemento contiene una cadena de texto-->
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT autora (#PCDATA)>
+<!ELEMENT paginas (#PCDATA)>
+<!ELEMENT editorial (#PCDATA)>
+<!ELEMENT genero (#PCDATA)>

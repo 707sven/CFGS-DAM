@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tienda SYSTEM "tienda.dtd">
+
+<tienda>
+    <producto>
+        <productoID>01</productoID>
+        <nombre>Spiderman</nombre>
+        <marca>Marvel Comics</marca>
+        <precio>10</precio>
+        <edadRecomendada>12</edadRecomendada>
+        <categoria>Comic</categoria>
+        <descuento>20</descuento>
+    </producto>
+</tienda>

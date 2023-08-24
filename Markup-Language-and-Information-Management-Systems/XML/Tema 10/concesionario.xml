@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="concesionario.css" type="text/css"?>
+
+<!DOCTYPE concesionario SYSTEM "concesionario.dtd">
+
+<concesionario ciudad="Malaga"> <!-- Opcional-->
+    <coche cocheID ="1"> <!-- Obligatorio-->
+        <modelo>Seat Ibiza</modelo>
+        <marca>Seat</marca>
+        <caballos>10000</caballos>
+        <color>negro</color>
+        <puertas>4</puertas>
+        <!-- Una o más especificaciones-->
+        <especificaciones>220CV</especificaciones>
+        <especificaciones>Diésel</especificaciones>
+    </coche>
+    <coche cocheID="2">
+        <modelo>Renault Clio</modelo>
+        <marca>Renault</marca>
+        <caballos>500</caballos>
+        <color>verde</color>
+        <puertas>2</puertas>
+        <especificaciones>220CV</especificaciones>
+    </coche>
+    <coche cocheID="3">
+        <modelo>Peugeot 2008</modelo>
+        <marca>Peugeot</marca>
+        <caballos>2345</caballos>
+        <color>rojo</color>
+        <puertas>4</puertas>
+        <especificaciones>Diésel</especificaciones>
+    </coche>
+</concesionario>

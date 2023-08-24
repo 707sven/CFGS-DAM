@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - Marta</title>
+    <script type="text/javascript">
+        var numero1;
+        var numero2;
+        var operacion;
+        var resultado;
+
+        do {
+            operacion = prompt("[+] Sumar +\n[+] Restar -\n[+] Multiplicar x\n[+] Dividir /\n[+] Comparar")
+            if (operacion == "salir") {
+            } else {
+                numero1 = prompt("Escribe el primer número.");
+                numero2 = prompt("Escribe el segundo número.");
+
+                switch (operacion) {
+                    //Sumar
+                    case "sumar":
+                    case "+":
+                        resultado = parseInt(numero1) + parseInt(numero2);
+                        console.log(numero1 + " + " + numero2 + " = " + resultado);
+                        alert(numero1 + " + " + numero2 + " = " + resultado);
+                        document.write("<p>[+] Suma: " + numero1 + " + " + numero2 + " = " + resultado + "</p>")
+                        break;
+
+                    //Restar
+                    case "restar":
+                    case "-":
+                        resultado = parseInt(numero1) - parseInt(numero2);
+                        console.log(numero1 + " - " + numero2 + " = " + resultado);
+                        alert(numero1 + " - " + numero2 + " = " + resultado);
+                        document.write("<p>[+] Resta: " + numero1 + " - " + numero2 + " = " + resultado + "</p>")
+                        break;
+
+                    //Multiplicar
+                    case "multiplicar":
+                    case "x":
+                        resultado = parseInt(numero1) * parseInt(numero2);
+                        console.log(numero1 + " x " + numero2 + " = " + resultado);
+                        alert(numero1 + " x " + numero2 + " = " + resultado);
+                        document.write("<p>[+] Multiplicación: " + numero1 + " x " + numero2 + " = " + resultado + "</p>")
+                        break;
+
+                    //Dividir
+                    case "dividir":
+                    case "/":
+                        resultado = parseInt(numero1) / parseInt(numero2);
+                        console.log(numero1 + " / " + numero2 + " = " + resultado);
+                        alert(numero1 + " / " + numero2 + " = " + resultado);
+                        document.write("<p>[+] División: " + numero1 + " / " + numero2 + " = " + resultado + "</p>")
+                        break;
+
+                    //Comparar
+                    case "comparar":
+                        if (numero1 > numero2) {
+                            console.log("El número mayor es: " + numero1);
+                            alert("El número mayor es: " + numero1);
+                            document.write("<p>[+] Comparación: El número mayor es: " + numero1 + "</p>")
+                            break;
+                        } else if(numero1 < numero2) {
+                            console.log("El número mayor es: " + numero2);
+                            alert("El número mayor es: " + numero2);
+                            document.write("<p>[+] Comparación: El número mayor es: " + numero2 + "</p>")
+                        } else {
+                            console.log("Los números son iguales.");
+                            alert("Los números son iguales.");
+                            document.write("<p>[+] Comparación: Los números son iguales.</p>")
+                        }
+
+                        break;
+                }
+            }
+
+
+        } while (operacion != "salir");
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

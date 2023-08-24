@@ -1,0 +1,35 @@
+Recoger los datos de toda la tabla
+
+SELECT * FROM [Nombre tabla];
+
+Recoger los datos de una columna de la tabla
+
+SELECT [Nombre Columna] FROM [Nombre Tabla];
+
+Recoger los datos de una columna sin repetición
+
+SELECT DISTINCT [Nombre Columna] FROM [Nombre Tabla];
+
+Renombrar una columna a la hora de ser mostrada (Mantiene su nombre en la BDD)
+
+SELECT [Nombre Columna] [Nombre a Mostrar] FROM [Nombre Tabla];
+
+Podemos limitar el resultado de la búsqueda con "WHERE"
+
+SELECT [Nombre Columna] FROM [Nombre Tabla] WHERE [Nombre Columna] = 'RESULTADO'|1234;
+
+Podemos ordenar los resultados con "ORDER BY" (ASC/DESC)
+
+SELECT * FROM [Nombre Tabla] ORDER BY [Nombre Columa/Numero Columna] ASC/DESC;
+
+Podemos ordenar los resultados poniendo los nulos primero con "NULLS FIRST"
+
+SELECT IdCliente, Nombre, Apellido FROM Clientes ORDER BY Nombre NULLS FIRST;
+
+Podemos agrupar resultados en algún campo determinado con GROUP BY | AVG[Media] SUM[Suma] MAX[Máximo] COUNT[Cuenta el num de resultados]
+
+SELECT SUM(precio), id_fabricante FROM producto GROUP BY id_fabricante ORDER BY id_fabricante;
+
+Podemos pedir que el campo tenga un valor específico con HAVING OR
+
+SELECT FABRICANTE, AVG(PRECIO) AS MEDIA FROM COCHES GROUP BY FABRICANTE HAVING FABRICANTE = 'BMW' OR FABRICANTE = 'SEAT'

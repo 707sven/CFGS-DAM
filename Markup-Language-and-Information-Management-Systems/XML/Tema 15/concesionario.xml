@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" 
+	href="concesionario.xsl"?>
+<concesionario>
+	<coche matricula="6732KPC">
+		<marca>Seat Ateca</marca>
+		<combustible>Gasolina</combustible>
+		<precio>23000</precio>
+	</coche>
+
+	<coche matricula="8280KWT">
+		<marca>Volkswagen Golf</marca>
+		<combustible>Diesel</combustible>
+		<precio>25000</precio>
+	</coche>
+	
+	<coche matricula="3245BWX">
+		<marca>Renault Megane</marca>
+		<combustible>Diesel</combustible>
+		<precio>21000</precio>
+	</coche>
+</concesionario>
+
+
+

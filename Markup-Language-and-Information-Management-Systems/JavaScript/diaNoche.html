@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia Noche</title>
+
+    <script type="text/javascript">
+        var noche=0;
+        function cambiar() {
+            var boton = document.getElementsByTagName("input")[0];
+            var tit = document.getElementById("titulo");
+            var cuer = document.getElementsByTagName("body")[0];
+            
+
+            if (noche == 0) {
+                tit.style.border = "solid 2px chocolate";
+                tit.style.textAlign = "center";
+                tit.style.boxShadow = "10px 10px 10px grey";
+
+                boton.value = "Cambiado";
+                boton.style.backgroundColor = "white";
+
+                cuer.style.backgroundColor = "black";
+                cuer.style.color = "white";
+
+                document.getElementById("duracion");
+                innerText = 128;
+                noche = 1;
+                
+            } else {
+                tit.style.border = "";
+                tit.style.textAlign = "";
+                tit.style.boxShadow = "";
+
+                boton.value = "Cambiar";
+                boton.style.backgroundColor = "";
+
+                cuer.style.backgroundColor = "";
+                cuer.style.color = "";
+
+                document.getElementById("duracion");
+                innerText = 128;
+                noche = 0;
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1 id="titulo">Desarrollo de Aplicaciones <br>Multiplataforma/Web</h1>
+    <h2 id="modulo">Módulo: Lenguaje de Marcas</h2>
+    <h2>Duración: <span id="duracion">129</span> horas</h2>
+    <input type="button" value="Cambiar" onclick="cambiar()" />
+</body>
+
+</html>

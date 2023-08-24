@@ -1,0 +1,39 @@
+body {
+    background-color: black;
+}
+
+p.parrafo {
+    background-color:deeppink;
+    width: 200px;
+    height: 200px;
+    /*overflow: hidden;*/
+    overflow-y: scroll;
+    /*display: none;*/
+    
+}
+
+div.caja-1 {
+    width: 150px;
+    height: 150px;
+    border: 10px solid darkblue;
+    background-color: royalblue;
+    border-style: dashed;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    z-index: 1;
+    /*display: none;*/
+}
+
+div.caja-2 {
+    width: 150px;
+    height: 150px;
+    border: 10px solid orangered;
+    background-color: orange;
+    border-style: double;
+    position: sticky;
+    /*position: fixed;*/
+    top: 0;
+    /*left: 50px;*/
+    z-index: 2;
+}

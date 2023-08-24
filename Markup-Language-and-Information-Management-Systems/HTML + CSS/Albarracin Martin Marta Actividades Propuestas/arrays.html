@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IVA Precio</title>
+    <script type="text/javascript">
+        function iva(precio) {
+            var iva_calculado = precio * 1.16;
+
+            if (iva_calculado < 500) {
+                return document.write("<p>El precio es BARATO</p>");
+            } else {
+                return document.write("<p>El precio es CARO</p>");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        precio = prompt("Introduce el precio.");
+        iva(precio);
+    </script>
+
+</body>
+
+</html>

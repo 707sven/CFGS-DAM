@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------
+Test set: com.mycompany.coche2.TelegramaTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.031 s <<< FAILURE! - in com.mycompany.coche2.TelegramaTest
+testGetNumPalabras  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.mycompany.coche2.Telegrama.getNumPalabras()" because "instance" is null
+	at com.mycompany.coche2.TelegramaTest.testGetNumPalabras(TelegramaTest.java:47)
+
+testGetCosto  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.mycompany.coche2.Telegrama.getCosto()" because "instance" is null
+	at com.mycompany.coche2.TelegramaTest.testGetCosto(TelegramaTest.java:101)
+
+testToString  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.mycompany.coche2.Telegrama.toString()" because "instance" is null
+	at com.mycompany.coche2.TelegramaTest.testToString(TelegramaTest.java:127)
+
+testSetTipoTelegrama  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.mycompany.coche2.Telegrama.setTipoTelegrama(String)" because "instance" is null
+	at com.mycompany.coche2.TelegramaTest.testSetTipoTelegrama(TelegramaTest.java:88)
+
+testSetNumPalabras  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.mycompany.coche2.Telegrama.setNumPalabras(int)" because "instance" is null
+	at com.mycompany.coche2.TelegramaTest.testSetNumPalabras(TelegramaTest.java:61)
+
+testGetTipoTelegrama  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.mycompany.coche2.Telegrama.getTipoTelegrama()" because "instance" is null
+	at com.mycompany.coche2.TelegramaTest.testGetTipoTelegrama(TelegramaTest.java:74)
+
+testCalculaCosto  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.mycompany.coche2.Telegrama.calculaCosto()" because "instance" is null
+	at com.mycompany.coche2.TelegramaTest.testCalculaCosto(TelegramaTest.java:114)
+

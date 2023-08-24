@@ -1,0 +1,10 @@
+<!ELEMENT tienda (producto+)>
+<!ELEMENT producto (productoID, nombre, marca, precio, (edadRecomendada|pegi), categoria+, descuento)>
+<!ELEMENT productoID (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT pegi (#PCDATA)>
+<!ELEMENT edadRecomendada (#PCDATA)>
+<!ELEMENT categoria (#PCDATA)>
+<!ELEMENT descuento (#PCDATA)>

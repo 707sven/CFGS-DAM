@@ -1,0 +1,177 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+
+.p1 {
+    font-weight: bold;
+    font-size: 1.4em;
+    background-color: deepskyblue;
+    border: solid royalblue 8px;
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.tabla_anime {
+    border-top: 8px solid lightblue;
+    border-left: 8px solid lightblue;
+    border-bottom: 8px solid royalblue;
+    border-right: 8px solid royalblue;
+    text-align: center;
+    padding: auto;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 5px;
+    empty-cells: hide;
+}
+
+.tabla_anime thead th {
+    font-size: 1.5em;
+    background-color: deepskyblue;
+    font-weight: bold;
+    color: darkblue;
+}
+
+.tabla_anime tbody tr:nth-child(odd) {
+    background-color: lightgrey;
+    color: grey;
+}
+
+.tabla_anime  tbody tr:nth-child(even) {
+    background-color: lightskyblue;
+    color: rgb(0, 130, 174);
+}
+.tabla_anime tbody tr:nth-child(odd):hover {
+    background-color: grey;
+    color: rgb(209, 209, 209);
+}
+
+.tabla_anime  tbody tr:nth-child(even):hover {
+    background-color: rgb(77, 148, 255);
+    color: darkblue;
+}
+
+.tabla_anime tbody tr td {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tabla_anime caption {
+    background-color: lightskyblue;
+    color: rgb(0, 130, 174);
+    text-decoration: underline;
+    caption-side: bottom;
+    font-size: 1.4em;
+}
+
+.header1 {
+    margin-top: 3%;
+    margin-left: 5%;
+    color: rgb(0, 130, 174);
+    text-decoration: underline dotted;
+}
+
+.lista1 {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    padding: 1%;
+    border-top: 8px solid lightblue;
+    border-left: 8px solid lightblue;
+    border-bottom: 8px solid royalblue;
+    border-right: 8px solid royalblue;
+    background-color: lightskyblue;
+    list-style-position: inside;
+    list-style-type: upper-roman;
+    color: grey;
+}
+
+.lista1 a {
+    color:rgb(0, 130, 174);
+}
+
+.lista1 a:hover {
+    color:darkblue;
+}
+
+.lista1 a:visited {
+    color:deeppink;
+}
+
+.lista1 a:visited:hover {
+    color:rgb(184, 42, 255);
+}
+
+..tabla-personajes  {
+    border-top: 8px solid lightblue;
+    border-left: 8px solid lightblue;
+    border-bottom: 8px solid royalblue;
+    border-right: 8px solid royalblue;
+    text-align: center;
+    padding: auto;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 5px;
+    empty-cells: hide;
+    border-collapse: collapse;
+}
+
+..tabla-personajes  caption {
+    background-color: lightskyblue;
+    color: rgb(0, 130, 174);
+    text-decoration: underline;
+    font-size: 1.4em;
+}
+
+.tabla-personajes  thead {
+    font-size: 1.5em;
+    background-color: deepskyblue;
+    font-weight: bold;
+    color: darkblue;
+}
+
+.tabla-personajes  thead th {
+    border-right: 8px solid lightblue;
+}
+
+.tabla-personajes  tbody tr td {
+    border-right: 8px solid royalblue;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tabla-personajes  tbody tr:nth-child(odd) {
+    background-color: lightgrey;
+    color: grey;
+}
+
+.tabla-personajes   tbody tr:nth-child(even) {
+    background-color: lightskyblue;
+    color: rgb(0, 130, 174);
+}
+.tabla-personajes  tbody tr:nth-child(odd):hover {
+    background-color: grey;
+    color: rgb(209, 209, 209);
+}
+
+.tabla-personajes   tbody tr:nth-child(even):hover {
+    background-color: rgb(77, 148, 255);
+    color: darkblue;
+}
+
+.lista2 {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    padding: 1%;
+    border-top: 8px solid lightblue;
+    border-left: 8px solid lightblue;
+    border-bottom: 8px solid royalblue;
+    border-right: 8px solid royalblue;
+    background-color: lightskyblue;
+    list-style-position: inside;
+    color: grey;
+    line-height: 1.5em;
+}

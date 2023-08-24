@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zoologico>
+    <animal categoria="Felinos">
+        <tipo>Leon</tipo>
+        <continente>Africa</continente>
+        <anio_nacimiento>2005</anio_nacimiento>
+        <peso>70</peso>
+        <unidad_peso>kg</unidad_peso>
+        <cantidad_comida>35</cantidad_comida>
+        <tipo_alimentacion>Carnivoro</tipo_alimentacion>
+        <tipo_alimento>Carne de Gacela</tipo_alimento>
+        <tipo_reproduccion>Viviparos</tipo_reproduccion>      
+    </animal>
+    <animal categoria="Reptiles">
+        <tipo>Pitón de Birmania</tipo>
+        <continente>Asia</continente>
+        <anio_nacimiento>2018</anio_nacimiento>
+        <peso>21</peso>
+        <unidad_peso>kg</unidad_peso>
+        <cantidad_comida>1</cantidad_comida>
+        <tipo_alimentacion>Carnivoro</tipo_alimentacion>
+        <tipo_alimento>Ratón</tipo_alimento>
+        <tipo_reproduccion>Oviparos</tipo_reproduccion>       
+    </animal>
+    <animal categoria="Aves">
+        <tipo>Buitre Leonado</tipo>
+        <continente>Europa</continente>
+        <anio_nacimiento>2021</anio_nacimiento>
+        <peso>13</peso>
+        <unidad_peso>kg</unidad_peso>
+        <cantidad_comida>5</cantidad_comida>
+        <tipo_alimentacion>Carnivoro</tipo_alimentacion>
+        <tipo_alimento>Carne de Cerdo</tipo_alimento>
+        <tipo_reproduccion>Oviparos</tipo_reproduccion> 
+    </animal>
+    <animal categoria="Reptiles">
+        <tipo>Cocodrilo del Nilo</tipo>
+        <continente>Africa</continente>
+        <anio_nacimiento>2000</anio_nacimiento>
+        <peso>131</peso>
+        <unidad_peso>kg</unidad_peso>
+        <cantidad_comida>19</cantidad_comida>
+        <tipo_alimentacion>Carnivoro</tipo_alimentacion>
+        <tipo_alimento>Carne de pollo</tipo_alimento>
+        <tipo_reproduccion>Oviparos</tipo_reproduccion> 
+    </animal>
+    <animal categoria="Marsupial">
+        <tipo>Canguro</tipo>
+        <continente>Oceania</continente>
+        <anio_nacimiento>2018</anio_nacimiento>
+        <peso>48</peso>
+        <unidad_peso>kg</unidad_peso>
+        <cantidad_comida>35</cantidad_comida>
+        <tipo_alimentacion>Hervivoro</tipo_alimentacion>
+        <tipo_alimento>Verduras variadas</tipo_alimento>
+        <tipo_reproduccion>Viviparos</tipo_reproduccion>
+    </animal>
+    <animal categoria="Equidos">
+        <tipo>Cebra</tipo>
+        <continente>Africa</continente>
+        <anio_nacimiento>2023</anio_nacimiento>
+        <peso>49</peso>
+        <unidad_peso>kg</unidad_peso>
+        <cantidad_comida>29</cantidad_comida>
+        <tipo_alimentacion>Hervivoro</tipo_alimentacion>
+        <tipo_alimento>Fruta</tipo_alimento>
+        <tipo_reproduccion>Viviparos</tipo_reproduccion>
+    </animal>
+    <animal categoria="Felinos">
+        <tipo>Trigre de Bengala</tipo>
+        <continente>Asia</continente>
+        <anio_nacimiento>2021</anio_nacimiento>
+        <peso>75</peso>
+        <unidad_peso>kg</unidad_peso>
+        <cantidad_comida>35</cantidad_comida>
+        <tipo_alimentacion>Carnivoro</tipo_alimentacion>
+        <tipo_alimento>Restos de carne</tipo_alimento>
+        <tipo_reproduccion>Viviparos</tipo_reproduccion>
+    </animal>
+</zoologico>    

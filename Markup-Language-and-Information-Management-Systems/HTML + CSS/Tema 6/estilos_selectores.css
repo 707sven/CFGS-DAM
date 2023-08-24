@@ -1,0 +1,30 @@
+* {
+    color: blue;   
+}
+p {
+    text-align: center;
+}
+.miclase {
+    border: solid 1px red;
+}
+#miidentificador{
+    background-color: cyan;
+}
+ul li {
+    background-color: grey;
+}
+h1, h2 {
+    border: solid 3px green;
+}
+p > a {
+    background-color: yellow;
+}
+p + div {
+    border: solid 2px blue
+}
+p [lang="es"]{
+    background-color: red;
+}
+p [lang="en"] {
+    background-color: orange;
+}

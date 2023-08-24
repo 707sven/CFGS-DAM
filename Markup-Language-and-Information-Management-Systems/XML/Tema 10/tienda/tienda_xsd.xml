@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tienda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="tienda.xsd">
+    <producto>
+        <productoID>01</productoID>
+        <nombre>Spiderman</nombre>
+        <marca>Marvel Comics</marca>
+        <precio>10</precio>
+        <edadRecomendada>+13</edadRecomendada>
+        <categoria>comic</categoria>
+        <descuento>20</descuento>
+    </producto>
+</tienda>

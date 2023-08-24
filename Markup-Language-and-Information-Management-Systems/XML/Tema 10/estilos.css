@@ -1,0 +1,21 @@
+*{
+    display: block;
+}
+
+libros {
+    background-color: lightblue;
+}
+
+
+
+libros::before {
+    content: "Mis libros";
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+libro {
+    background-color: lightcoral;
+    width: 300px;
+    border: 5px solid yellow;
+}

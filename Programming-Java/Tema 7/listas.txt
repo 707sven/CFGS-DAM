@@ -1,0 +1,14 @@
+Lista (array de enteros):
+
+- Constructores
+    - cuando haga un "new lista" que cree un array de tamaño 10 por default -- (sin dar valores)
+    - otro que pueda crear el array con el tamaño que quiera
+
+- Metodos
+   - obtener (nº de elementos insertados en la lista)
+   - insertar un nº al final de la lista
+   - insertar un nº al principio de la lista
+   - insertar un nº en un lugar de la lista elegido
+   - eliminar un elemento de un lugar elegido
+   - obtener el elemento cuyo indice se pasa de parametro y que de un indice
+   - representar la lista con una cadena de caracteres

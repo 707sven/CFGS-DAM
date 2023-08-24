@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="tienda">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="producto" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="productoID" minOccurs="1" maxOccurs="1" type="xs:int"/>
+                            <xs:element name="nombre" minOccurs="1" maxOccurs="1" type="xs:string"/>
+                            <xs:element name="marca" minOccurs="1" maxOccurs="1" type="xs:string"/>
+                            <xs:element name="precio" minOccurs="1" maxOccurs="1" type="xs:decimal"/>
+                            <xs:choice>
+                                <xs:element name="edadRecomendada" minOccurs="1" maxOccurs="1">
+                                    <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                            <xs:enumeration value="+0"/>
+                                            <xs:enumeration value="+3"/>
+                                            <xs:enumeration value="+13"/>
+                                            <xs:enumeration value="+18"/>
+                                        </xs:restriction>
+                                    </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="pegi" minOccurs="1" maxOccurs="1">
+                                    <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                            <xs:enumeration value="PEGI 3"/>
+                                            <xs:enumeration value="PEGI 7"/>
+                                            <xs:enumeration value="PEGI 12"/>
+                                            <xs:enumeration value="PEGI 13"/>
+                                            <xs:enumeration value="PEGI 16"/>
+                                            <xs:enumeration value="PEGI 18"/>
+                                        </xs:restriction>
+                                    </xs:simpleType>
+                                </xs:element>
+                            </xs:choice>
+                            <xs:element name="categoria" minOccurs="1" maxOccurs="unbounded">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="comic"/>
+                                        <xs:enumeration value="manga"/>
+                                        <xs:enumeration value="juego de mesa"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="descuento" minOccurs="1" maxOccurs="1">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:int">
+                                    <xs:minInclusive value="0"/>
+                                    <xs:maxInclusive value="100"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>            
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

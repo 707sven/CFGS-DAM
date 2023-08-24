@@ -1,0 +1,53 @@
+1. Definir la clase Estudiante 
+2. Definir la clase Asignatura
+3. Definir la clase Empresa
+4. Definir la clase Trabajador
+5. Definir la clase Cuenta Corriente
+
+- De cada clase indica los siguientes elementos:
+	- nombre de la clase
+	- atributos (características)
+	- métodos (comportamiento) si los tiene.
+
+- Indica 2 objetos de cada clase
+
+
+1. Clase Estudiante
+Nombre clase: Estudiante
+Métodos (funciones): estudiar, leer, trabajar
+Atributos (características): notas, esfuerzo
+
+Estudiante1: media 7, trabajador
+Estudiante2: media 5, no trabaja bien
+
+2. Clase Asignatura
+Nombre clase: Asignatura
+Métodos (funciones): enseñar
+Atributos (características): temario, qué se da
+
+Asignatura1: Lengua, 8 temas
+Asignatura2: Matemáticas, 12 temas
+
+3. Clase Empresa
+Nombre clase: Empresa
+Métodos (funciones): ganar dinero
+Atributos (características): nombre, tipo, amplitud, ganancias
+
+Empresa1: mcdonalds, restaruante, 1M
+Empresa2: burguer king, restaurante, 1M
+
+4. Clase Trabajador
+Nombre clase: Trabajador
+Métodos (funciones): trabajar
+Atributos (características): nombre, edad, trabajo
+
+Trabajador1: Paco, 43, albañil
+Trabajador2: Pedro, 88, empresario
+
+5. Clase Cuenta Corriente
+Nombre clase: CuentaCorriente
+Métodos (funciones): guardar dinero
+Atributos (características): banco, nombre, cantidad ingresada
+
+CuentaCorriente1: BBVA, Paco, 15K
+CuentaCorriente2: Caixa, Pedro, 55k

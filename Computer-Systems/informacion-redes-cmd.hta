@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Informacion de redes a traves de CMD</title>
+<meta name="author" content="Norfi Carrodeguas">
+<HTA:APPLICATION 
+     ID="Informacion de redes"
+     APPLICATIONNAME="Informacion de redes"
+     SCROLL="yes"
+     SINGLEINSTANCE="no"
+     WINDOWSTATE="normal"
+>
+<meta name="Description" content="Obtiene informacion de la configuracion de redes a traves de la linea de comandos mediante NETSH, IPCONFIG y NETSTAT">
+<script>window.resizeTo(640, 480);</script>
+<script type="text/javascript"> 
+function openNORFI() 
+{ 
+var shell = new ActiveXObject("WScript.Shell"); 
+shell.run("http://norfipc.com"); 
+} 
+</script> 
+<SCRIPT LANGUAGE="VBScript">
+    Sub Window_Onload
+      window.opener = "x"
+    End Sub
+</SCRIPT>
+</head>
+
+<SCRIPT Language=VBScript>
+
+Sub Getnetsh()
+Set objShell = CreateObject("WScript.Shell")
+strCommand = "cmd /k netsh interface ip show config"
+objShell.Run strCommand, 1
+End Sub
+
+Sub Getipconfig()
+Set objShell = CreateObject("WScript.Shell")
+strCommand = "cmd /k ipconfig /all"
+objShell.Run strCommand, 1
+End Sub
+
+Sub Getnetstat1()
+Set objShell = CreateObject("WScript.Shell")
+strCommand = "cmd /k netstat -a -n -b -proto TCP 05|findstr /c:ESTABLISHED"
+objShell.Run strCommand, 1
+End Sub
+
+Sub Getnetstat2()
+Set objShell = CreateObject("WScript.Shell")
+strCommand = "cmd /k netstat -a -n|FINDSTR /C:LISTENING"
+objShell.Run strCommand, 1
+End Sub
+
+Sub GetMAC()
+Set objShell = CreateObject("WScript.Shell")
+strCommand = "cmd /k getmac"
+objShell.Run strCommand, 1
+End Sub
+
+</SCRIPT>
+<BODY STYLE="font:10 pt arial; color:white; filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#0000FF', EndColorStr='#000000')"> <DIV ALIGN="center">
+
+<p><b>Ejecutar en tu sistema ordenes  al interprete de comandos de Windows para conocer informacion de tu configuracion de redes</b></p>
+<input id=runbutton  class="button" type="button" value="Ver configuración de redes con NETSH  " name="run_button"  onClick="Getnetsh()"><br>
+<input id=runbutton  class="button" type="button" value="Ver configuración TCP/IP con IPCONFIG" name="run_button"  onClick="Getipconfig()"><br>
+<input id=runbutton  class="button" type="button" value="Conexiones establecidas con NETSTAT " name="run_button"  onClick="Getnetstat1()"><br>
+<input id=runbutton  class="button" type="button" value="Puertos abiertos que estan en escucha  " name="run_button"  onClick="Getnetstat2()">
+<input id=runbutton  class="button" type="button" value="             Saber tu MAC Address             " name="run_button"  onClick="GetMAC()">
+<br><br><br><br>
+
+<input id=runbutton  class="button2" type="button" value="CERRAR" name="run_button"  onClick="self.close()"><br><br><br><br>
+
+
+
+
+<p><font size="-2">&copy; 2010, NorfiPC<br>
+<a href="http://norfipc.com/" target="_blank" onclick="openNORFI()"><font color="white">http://norfipc.com</a></font></p></div>
+
+</body>
+</html>

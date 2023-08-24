@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="biblioteca">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="libro" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="titulo" minOccurs="1" maxOccurs="1" type="xs:string"/>
+                            <xs:choice>
+                                <xs:element name="autor" minOccurs="1" maxOccurs="1" type="xs:string"/>
+                                <xs:element name="autora" minOccurs="1" maxOccurs="1" type="xs:string"/>
+                            </xs:choice> 
+                            <xs:element name="paginas" minOccurs="1" maxOccurs="1">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:int">
+                                        <xs:minInclusive value="1"/>
+                                        <xs:maxInclusive value="5000"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="editorial" minOccurs="1" maxOccurs="1" type="xs:string"/>
+                            <xs:element name="categoria" minOccurs="0" maxOccurs="unbounded">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Aventuras"/>
+                                        <xs:enumeration value="Ciencia Ficción"/>
+                                        <xs:enumeration value="Medicina"/>
+                                        <xs:enumeration value="Acción"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="formato" type="xs:string"/>
+                    </xs:complexType>            
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.mycompany.coche2.CuentaTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.004 s <<< FAILURE! - in com.mycompany.coche2.CuentaTest
+testDimeContra  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.mycompany.coche2.Cuenta.dimeContra()" because "instance" is null
+	at com.mycompany.coche2.CuentaTest.testDimeContra(CuentaTest.java:92)
+
+testDimeSaldo  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.mycompany.coche2.Cuenta.dimeSaldo()" because "instance" is null
+	at com.mycompany.coche2.CuentaTest.testDimeSaldo(CuentaTest.java:78)
+
+testRetira  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.mycompany.coche2.Cuenta.retira(int, String)" because "instance" is null
+	at com.mycompany.coche2.CuentaTest.testRetira(CuentaTest.java:64)
+

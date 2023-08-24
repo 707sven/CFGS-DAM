@@ -1,0 +1,27 @@
+*{
+    display: block;
+}
+
+concesionario {
+    background-color: khaki;
+}
+
+coche {
+    background-color: dodgerblue;
+    width: 200px;
+    border: 5px solid darkblue;
+    margin-bottom: 10px;
+    border-style: groove;
+}
+
+modelo {
+    background-color: greenyellow;
+    border: 3px solid darkviolet;
+    color:darkgreen;
+    font-weight: bold;
+}
+
+color {
+    color: white;
+    font-weight: bold;
+}

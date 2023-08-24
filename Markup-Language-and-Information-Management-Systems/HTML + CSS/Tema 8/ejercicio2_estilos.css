@@ -1,0 +1,32 @@
+ul {
+    list-style-position: inside;
+    list-style-image: url("instagram.png");
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: lightblue;
+}
+li{
+    font-size: 0.6em;
+}
+
+li::first-letter{
+    font-size: 1.5em;
+}
+
+li:nth-child(odd){
+    background-color:grey;
+    color:white;
+}
+
+li:nth-child(odd):hover{
+    background-color:violet;
+    color:white;
+}
+
+li:nth-child(even){
+    background-color:rgb(108, 182, 255);
+}
+
+li:nth-child(even):hover{
+    background-color:lightskyblue;
+}

@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.mycompany.coche2.DemoTelegramaTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.075 s <<< FAILURE! - in com.mycompany.coche2.DemoTelegramaTest
+testMain  Time elapsed: 0.049 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: The test case is a prototype.
+	at com.mycompany.coche2.DemoTelegramaTest.testMain(DemoTelegramaTest.java:48)
+

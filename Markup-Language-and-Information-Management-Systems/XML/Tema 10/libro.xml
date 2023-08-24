@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="estilos.css" type="text/css"?>
+
+<!DOCTYPE libros SYSTEM "libro.dtd"> <!-- Declaración de libros -->
+
+<libros>
+    <libro libroID="1" ISBN="12345">
+        <titulo>Los Pilares de la Tierra</titulo>
+        <autor>Ken Follet</autor>
+        <paginas>10000</paginas>
+        <editorial>Planeta</editorial>
+        <genero>Histórico</genero>
+        <genero>Aventuras</genero>
+    </libro>
+    <libro libroID="2">
+        <titulo>50 Sobras de Grey</titulo>
+        <autora>E.L James</autora>
+        <paginas>500</paginas>
+        <editorial>Anaya</editorial>
+        <genero>Romance</genero>
+    </libro>
+</libros>
